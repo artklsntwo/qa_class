@@ -167,6 +167,15 @@ h1 {
     width: 130px;
 }
 
+.button-two {
+  color: #494A49;
+  padding: 6px;
+  background-color: #fff;
+  margin: 0 25px 0 0px;
+  line-height: 0;
+  width: 130px;
+}
+
 .button:hover {
     color: #fff;
     background-color: #bcbcbc;
