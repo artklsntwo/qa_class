@@ -149,9 +149,6 @@ h1 {
     width: 50%;
 }
 
-.highlight {
-    background-color: yellow;
-}
 
 #intro-wrapp-id > p > span 
 {
@@ -185,11 +182,55 @@ h1 {
    content: '>';
 }
 
+<<<<<<< Updated upstream
 @media (max-width: 1500px) {
     .title-wrapper h1 {
          font-size: 74px; 
          border: none;
     }
+=======
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  
+  #top-nav {display: none;}
+
+  .hamburger-menu  { display: block; }
+
+  .nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-wrapper ul li {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+  }
+
+  .title-wrapper h1 {
+      font-family: Inter;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 119px;
+      letter-spacing: 0em;
+      text-align: left;
+  }
+
+>>>>>>> Stashed changes
 }
 
 @media (max-width: 1117px) {
