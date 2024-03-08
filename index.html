@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html> 
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A brief description of the page's content.">
+        <meta name="keywords" content="your,keywords,here">
+        <link rel="icon" href="img/" type="image/x-icon">
+
         <title>My First Page!</title>
 
         <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="script.js"></script>
+
+        <!-- <script>
+            function myFunction() {
+              var x = document.getElementById("top-nav");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+        </script> -->
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("top-nav");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+                x.classList.remove("active"); // Remove the class when the element is hidden
+              } else {
+                x.style.display = "block";
+                x.classList.add("active"); // Add the class when the element is shown
+              }
+            }
+          </script>
+          
     </head>
     <body>
         <!-- Main content starts here -->
@@ -12,19 +44,24 @@
             <header>
                 <div class="nav-wrapper">
                     <div class="logo">
-                        Logo
+                        KLASSEN
                     </div>
-                    <nav id="top-nav">
-                        <ul>
-                            <li>
-                                <a href="#about">
-                                    About Me
-                                </a>
-                            </li>
-                            <li>My works</li>
-                            <li>Work Process</li>
-                        </ul>
-                    </nav>
+                    <div class="mobile-nav">
+                        <a href="javascript:void(0);" class="hamburger-menu icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <nav id="top-nav">
+                            <ul>
+                                <li>
+                                    <a href="#about">
+                                        About Me
+                                    </a>
+                                </li>
+                                <li>My works</li>
+                                <li>Work Process</li>
+                            </ul>
+                        </nav>
+                    </div>
                     <button class="button">
                         contact
                     </button>
